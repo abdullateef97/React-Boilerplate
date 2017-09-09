@@ -5,12 +5,13 @@ module.exports = {
         'script-loader!foundation-sites/dist/js/foundation.min.js',
         './app/app.jsx'
     ],
-    externals : {
-        jquery :'jQuery'
-    },
+    // externals : {
+    //     jquery :'jQuery'
+    // },
     plugins :[
         new webpack.ProvidePlugin({
-            '$' : 'jquery','jQuery': 'jquery'
+            'window.$' : 'jquery',
+            'window.jQuery': 'jquery'
         })
     ],
     output : {
@@ -23,7 +24,7 @@ module.exports = {
         alias : {
           //add your aliases 
           main : 'app/components/main.jsx',
-          applicationStyles : 'public/index.css'
+          applicationStyles : 'public/index.scss'
         },
         //* will resolve all extensions
         extensions : ['*','.js','.jsx']
