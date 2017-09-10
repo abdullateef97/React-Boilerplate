@@ -3,7 +3,7 @@ A basic React BoilerPlate that allows you to start building react apps immediate
 
 # Features
 Comes prebuilt & fully configured with 
-i)React
+i)React '\n'
 ii)ReactDOM 
 iii)ReactRouter4 and axios
 iv) a standard webpack.config.js
