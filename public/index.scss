@@ -1,5 +1,10 @@
 @import "base/_vars.scss";
 
+//foundation
+@import "base/settings";
+@import  "foundation";
+@include foundation-everything;
+
 
 .count{
     width: 30%;margin: auto
